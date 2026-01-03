@@ -1,0 +1,123 @@
+.activities-page {
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.activities-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ===== Card ===== */
+.activity-card {
+  position: relative;
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  overflow: hidden;
+}
+
+.activity-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+.activity-title {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: white;
+  font-size: 1.2rem;
+  z-index: 2;
+}
+
+/* Hover Overlay */
+.activity-hover {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  color: white;
+  padding: 1.2rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+
+.activity-card:hover .activity-hover {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.activity-tags span {
+  font-size: 0.75rem;
+  margin-right: 0.4rem;
+  background: rgba(255,255,255,0.2);
+  padding: 2px 6px;
+}
+
+.activity-cta {
+  display: block;
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+/* ===== Modal ===== */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  max-width: 520px;
+  width: 90%;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.modal-content img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.modal-links a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #2563eb;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .activity-card {
+    height: 260px;
+  }
+}

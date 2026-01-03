@@ -1,0 +1,199 @@
+/* ===============================
+   Events Section (RSF Theme)
+   =============================== */
+
+.events-section {
+  position: relative;
+  isolation: isolate;              /* prevents overlap with next sections */
+  padding: 4rem 2rem 6.5rem;       /* extra bottom space for nav buttons */
+  background: radial-gradient(circle at top, #06182f, #020617);
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.events-title {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: 1px;
+}
+
+/* ===============================
+   Carousel Container
+   =============================== */
+
+.carousel {
+  position: relative;
+  height: 460px;                   /* FIX: ensures cards stay inside section */
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===============================
+   Event Cards
+   =============================== */
+
+.card {
+  position: absolute;
+  width: 280px;
+  height: 380px;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.6s ease, filter 0.6s ease, box-shadow 0.6s ease;
+  cursor: pointer;
+  box-shadow: 0 20px 60px rgba(0, 255, 255, 0.15);
+  background: #020617;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay */
+.card .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.15),
+    transparent
+  );
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.card span {
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+  color: #4fd1c5;
+}
+
+/* ===============================
+   Card States
+   =============================== */
+
+.card.active {
+  transform: scale(1.05);
+  z-index: 3;
+  filter: none;
+}
+
+.card.side {
+  transform: translateX(320px) scale(0.9);
+  filter: blur(2px) brightness(0.7);
+  z-index: 2;
+}
+
+.card.side:first-of-type {
+  transform: translateX(-320px) scale(0.9);
+}
+
+.card.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Hover focus */
+.card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 30px 80px rgba(0, 255, 255, 0.3);
+}
+
+/* ===============================
+   Navigation Buttons
+   =============================== */
+
+.nav {
+  position: absolute;
+  bottom: -65px;                   /* FIX: moved clearly below cards */
+  background: rgba(79, 209, 197, 0.18);
+  border: 1px solid rgba(79, 209, 197, 0.45);
+  color: white;
+  font-size: 1.3rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: transform 0.2s ease, background 0.2s ease;
+  margin: -1rem;
+}
+
+.nav:hover {
+  transform: scale(1.08);
+  background: rgba(79, 209, 197, 0.3);
+}
+
+.nav.left {
+  left: 46%;
+}
+
+.nav.right {
+  right: 46%;
+}
+
+/* ===============================
+   Section Divider (Visual Separation)
+   =============================== */
+
+.events-section::after {
+  content: "";
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(79, 209, 197, 0.6),
+    transparent
+  );
+}
+
+/* ===============================
+   Mobile Responsiveness
+   =============================== */
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 400px;
+  }
+
+  .card {
+    width: 240px;
+    height: 320px;
+  }
+
+  .nav {
+    bottom: -55px;
+  }
+
+  .nav.left {
+    left: 38%;
+  }
+
+  .nav.right {
+    right: 38%;
+  }
+}
+

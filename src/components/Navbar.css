@@ -1,0 +1,40 @@
+ @import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap');
+
+.navbar nav {
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+.logoimg img{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.logoName h2{
+    font-family: 'Playwrite US Modern', sans-serif;
+    font-weight: 200;
+    font-size: 24px;
+    margin-right: 50px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0 0 0 30%;
+
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li:hover {
+    text-decoration: underline;
+} 
+

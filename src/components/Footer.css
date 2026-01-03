@@ -1,0 +1,147 @@
+/* ===== Footer Wrapper ===== */
+.footer {
+  position: relative;
+  background: linear-gradient(135deg, #050b1e, #020617);
+  color: #e5e7eb;
+  padding-top: 4rem;
+  overflow: hidden;
+}
+
+/* ===== Glow ===== */
+.footer-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top,
+    rgba(56, 189, 248, 0.15),
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+/* ===== Layout ===== */
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Brand ===== */
+.footer-brand img {
+  width: 48px;
+  margin-bottom: 0.75rem;
+}
+
+.footer-brand h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.footer-brand p {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  max-width: 260px;
+}
+
+/* ===== Link Sections ===== */
+.footer-links h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.4rem;
+}
+
+/* Links with subtle animation */
+.footer-links a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  color: #9ca3af;
+  text-decoration: none;
+  transform: translateX(0);
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 1px;
+  background: #38bdf8;
+  transition: width 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #38bdf8;
+  transform: translateX(4px);
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+/* ===== Social Icons ===== */
+.social-link svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  opacity: 0.85;
+  transition: opacity 0.25s ease;
+}
+
+.social-link:hover svg {
+  opacity: 1;
+}
+
+/* ===== Footer Bottom ===== */
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #9ca3af;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Scroll To Top ===== */
+.scroll-top {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: #38bdf8;
+  color: #020617;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.4);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  z-index: 1000;
+}
+
+.scroll-top:hover {
+  transform: translateY(-4px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .footer-brand p {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,247 @@
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.navbar-logo {
+  width: 36px;
+  height: 36px;
+}
+
+.navbar-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #7a1e1e;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-links a {
+  font-weight: 500;
+  position: relative;
+}
+
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #7a1e1e;
+  transition: width 0.3s ease;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+.navbar-links a.active {
+  color: #7a1e1e;
+}
+
+.navbar-links a.active::after {
+  width: 100%;
+}
+/* ============================= */
+/* Hamburger Button */
+/* ============================= */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: #7a1e1e;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+}
+
+/* Animate to cross */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ============================= */
+/* Mobile Menu */
+/* ============================= */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 260px;
+  height: 100vh;
+  background: #ffffff;
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: right 0.4s ease;
+  z-index: 999;
+}
+
+.mobile-menu.show {
+  right: 0;
+}
+
+.mobile-menu a {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.mobile-menu a.active {
+  color: #7a1e1e;
+}
+
+/* ============================= */
+/* Responsive Rules */
+/* ============================= */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* ============================= */
+/* Hamburger */
+/* ============================= */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: #7a1e1e;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+}
+
+/* Animate to cross */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ============================= */
+/* Overlay */
+/* ============================= */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(2px);
+  z-index: 998;
+}
+
+/* ============================= */
+/* Mobile Menu */
+/* ============================= */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -280px;
+  width: 280px;
+  height: 100vh;
+  background: linear-gradient(
+    160deg,
+    #ffffff,
+    #f5f5f5
+  );
+  box-shadow: -6px 0 20px rgba(122, 30, 30, 0.2);
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  transition: right 0.4s ease;
+  z-index: 999;
+}
+
+/* Hero-style glow */
+.mobile-menu::before {
+  content: "";
+  position: absolute;
+  inset: -50%;
+  background: radial-gradient(
+    circle at top right,
+    rgba(122, 30, 30, 0.15),
+    transparent 60%
+  );
+  z-index: -1;
+}
+
+.mobile-menu.show {
+  right: 0;
+}
+
+.mobile-menu a {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.mobile-menu a.active {
+  color: #7a1e1e;
+}
+
+/* ============================= */
+/* Responsive */
+/* ============================= */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
