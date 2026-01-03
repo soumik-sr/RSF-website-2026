@@ -25,7 +25,7 @@ export default function Navbar() {
         <nav className="navbar-links">
           <NavLink to="/" end>Home</NavLink>
           <NavLink to="/about">About</NavLink>
-          <NavLink to="/team">Team</NavLink>
+          {/* <NavLink to="/team">Team</NavLink> */}
           <NavLink to="/activities">Activities</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </nav>
@@ -48,7 +48,7 @@ export default function Navbar() {
       <div className={`mobile-menu ${open ? "show" : ""}`}>
         <NavLink to="/" end onClick={() => setOpen(false)}>Home</NavLink>
         <NavLink to="/about" onClick={() => setOpen(false)}>About</NavLink>
-        <NavLink to="/team" onClick={() => setOpen(false)}>Team</NavLink>
+        {/* <NavLink to="/team" onClick={() => setOpen(false)}>Team</NavLink> */}
         <NavLink to="/activities" onClick={() => setOpen(false)}>Activities</NavLink>
         <NavLink to="/contact" onClick={() => setOpen(false)}>Contact</NavLink>
       </div>
