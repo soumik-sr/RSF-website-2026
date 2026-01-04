@@ -8,30 +8,29 @@ const Announcement = () => {
 
             <div className="announcement-container">
                 <div className="announcement-card">
-                    <h3>RSF Annual Meet 2025</h3>
+                    <h3>Navadhi</h3>
                     <p>
-                        Join us for the RSF Annual Meet on <strong>22nd November 2025</strong>,
-                        featuring keynote talks and interdisciplinary research discussions.
+                        RSF proudly presents NavaDhi, our flagship three-day research fest at IITD, taking place on <strong>January 21-23, 2026</strong>.
+                        The research fest aims to bring together innovative ideas, creativity in research, scientific exchanges, competitions, and camaraderie, designed to celebrate the spirit of research.
                     </p>
-                    <span className="date">Posted: Oct 18, 2025</span>
+                    <span className="date">Posted: Jan 4, 2026</span>
                 </div>
 
                 <div className="announcement-card">
-                    <h3>Call for Poster Presentation</h3>
+                    <h3>BT_reads</h3>
                     <p>
-                        We invite submissions for the upcoming RSF Research Poster Exhibition.
-                        Deadline: <strong>30th October 2025</strong>.
+                        One hour of focused reading, followed by some light discussion and games! Join us on
+                        <strong>Saturday, 10th January 3:00 PM at Biotech Lawns</strong> with a book—or anything you’d love to read and unwind with.
                     </p>
-                    <span className="date">Posted: Oct 15, 2025</span>
+                    <span className="date">Posted: Jan 4, 2026</span>
                 </div>
 
                 <div className="announcement-card">
-                    <h3>New Collaboration Initiative</h3>
+                    <h3>Srijan & Prastuti</h3>
                     <p>
-                        RSF introduces a new inter-departmental collaboration program.
-                        Interested scholars can apply through the RSF portal.
+                        Exciting competitions designed to showcase your research through innovative and engaging video presentations. An opportunity to blend Science, Technology, and Arts, making research accessible to a wider audience while fostering collaborations across academia, industry, and creative disciplines.
                     </p>
-                    <span className="date">Posted: Oct 10, 2025</span>
+                    <span className="date">Posted: Jan 4, 2026</span>
                 </div>
             </div>
 

@@ -1,24 +1,31 @@
 const events = [
   {
-    title: "Resonance",
-    subtitle: "Exploring the Endless Dimensions",
-    date: "28 – 30 March",
-    image: "/events/resonance.png",
-    link: "https://example.com/resonance"
+    title: "",
+    subtitle: "",
+    date: "",
+    image: "/eventsec1.jpg",
+    link: "https://www.instagram.com/p/DRmxKaSkkG_/?hl=en"
   },
   {
-    title: "Research Intern Talk",
-    subtitle: "Insights from Summer Interns",
-    date: "15 February",
-    image: "/events/intern.png",
-    link: "https://example.com/intern"
+    title: "",
+    subtitle: "",
+    date: "",
+    image: "/eventsec2.jpg",
+    link: "https://www.instagram.com/p/DRSHmWOkv92/?hl=en&img_index=1"
   },
   {
-    title: "Interactive Session with Alumni",
-    subtitle: "Careers & Higher Studies",
-    date: "10 January",
-    image: "/events/alumni.png",
-    link: "https://example.com/alumni"
+    title: "",
+    subtitle: "",
+    date: "",
+    image: "/eventsec3.jpg",
+    link: "https://www.instagram.com/rsf_iitdelhi/?hl=en"
+  },
+  {
+    title: "",
+    subtitle: "",
+    date: "",
+    image: "/eventsec4.jpeg",
+    link: "https://www.instagram.com/p/DSY2M4yku70/?hl=en&img_index=1"
   }
 ];
 

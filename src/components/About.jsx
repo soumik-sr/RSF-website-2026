@@ -28,7 +28,7 @@ const About = () => {
 
         {/* IMAGE */}
         <div className="about-image">
-          <img src="/iitd_campus.jpg" alt="IIT Delhi Campus" />
+          <img src="/IITD.png" alt="IIT Delhi Campus" />
         </div>
 
       </div>

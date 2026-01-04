@@ -41,7 +41,7 @@
   color: #ffffff;
   font-size: 1rem;
   font-weight: 500;
-  border-radius: 4px;
+  border-radius: 20px;
   transition: background 0.25s ease, transform 0.25s ease;
 }
 

@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./Navbar.css";
 
@@ -17,8 +18,13 @@ export default function Navbar() {
 
         {/* Left */}
         <div className="navbar-left">
-          <img src="/logo.png" alt="RSF Logo" className="navbar-logo" />
+          <Link to="/">
+          <img src="/logoimg.png" alt="RSF Logo" className="navbar-logo" />
+          </Link>
+          <Link to="/">
           <span className="navbar-title">Research Synergy Forum</span>
+          </Link>
+          
         </div>
 
         {/* Desktop Links */}
