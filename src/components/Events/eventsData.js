@@ -3,7 +3,7 @@ const events = [
     title: "",
     subtitle: "",
     date: "",
-    image: "/eventsec1.jpg",
+    image: "/eventsec7.jpg",
     link: "https://www.instagram.com/p/DRmxKaSkkG_/?hl=en"
   },
   {
