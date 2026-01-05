@@ -27,8 +27,8 @@ const Footer = () => {
         <div className="footer-container">
           {/* Brand */}
           <div className="footer-brand">
-            <a href="/"><img src="/logoimg.png" alt="RSF Logo" /> </a>
-            <a href="/"><h2>Research Synergy Forum</h2></a>
+            <Link to="/"><img src="/logoimg.png" alt="RSF Logo" /></Link>
+            <Link to="/"><h2>Research Synergy Forum</h2></Link>
             <p>Bridging research, innovation, and collaboration.</p>
           </div>
 
