@@ -8,7 +8,7 @@ const Announcement = () => {
 
             <div className="announcement-container">
                 <div className="announcement-card">
-                    <h3>Navadhi</h3>
+                    <h3>NavaDhi</h3>
                     <p>
                         RSF proudly presents NavaDhi, our flagship three-day research fest at IITD, taking place on <strong>January 21-23, 2026</strong>.
                         The research fest aims to bring together innovative ideas, creativity in research, scientific exchanges, competitions, and camaraderie, designed to celebrate the spirit of research.

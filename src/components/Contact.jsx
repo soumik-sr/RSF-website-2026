@@ -15,7 +15,7 @@ const Contact = () => {
         </p>
 
         <a
-          href="mailto:rsf@iitd.ac.in"
+          href="mailto:rsf_secretary@iitd.ac.in"
           className="contact-btn"
         >
           Email Research Synergy Forum

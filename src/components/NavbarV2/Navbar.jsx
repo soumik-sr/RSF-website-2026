@@ -19,7 +19,7 @@ export default function Navbar() {
         {/* Left */}
         <div className="navbar-left">
           <Link to="/">
-          <img src="/logoimg.png" alt="RSF Logo" className="navbar-logo" />
+          <img src="/logov2.jpg" alt="RSF Logo" className="navbar-logo" />
           </Link>
           <Link to="/">
           <span className="navbar-title">Research Synergy Forum</span>
