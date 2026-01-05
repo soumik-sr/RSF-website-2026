@@ -16,7 +16,7 @@ export default function Hero() {
             and people to create meaningful scientific impact.
           </p>
 
-          <a href="/about" className="hero-btn">
+          <a href="#about-togo" className="hero-btn">
             Explore
           </a>
         </div>
